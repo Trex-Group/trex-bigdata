@@ -1,15 +1,14 @@
+alias ll='ls -lhAF'
+
 export JAVA_HOME=/opt/jdk
 
-export MAVEN_HOME=/usr/local/maven
-export PATH=$PATH:$MAVEN_HOME/bin
-
-export SCALA_HOME=/usr/local/scala
+export SCALA_HOME=/opt/scala
 export PATH=$PATH:$SCALA_HOME/bin
 
-export SBT_HOME=/usr/local/sbt
+export SBT_HOME=/opt/sbt
 export PATH=$PATH:$SBT_HOME/bin
 
-export HADOOP_INSTALL=/usr/local/hadoop
+export HADOOP_INSTALL=/opt/hadoop
 export HADOOP_HOME=$HADOOP_INSTALL
 export PATH=$PATH:$HADOOP_INSTALL/bin
 export PATH=$PATH:$HADOOP_INSTALL/sbin

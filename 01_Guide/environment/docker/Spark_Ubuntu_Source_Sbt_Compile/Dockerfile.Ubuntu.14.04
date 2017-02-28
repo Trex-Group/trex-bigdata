@@ -1,37 +1,27 @@
 FROM ubuntu:14.04
 MAINTAINER xenron <xenron@hotmail.com>
 
-# init wheezy docker
-RUN apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
-  rm -rf /var/cache/debconf/*-old && rm -rf /var/lib/apt/lists/* && rm -rf /usr/share/doc/* && \
-  apt-get update -y && \
-  echo "`cat /etc/issue.net` Docker Image - philcryer/min-wheezy - `date +'%Y/%m/%d'`" > /etc/motd
+# install software package
+RUN apt-get update -y && \
+  apt-get install -y vim tar unzip dnsmasq wget net-tools curl openssh-server nano g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev 
 
-RUN apt-get install -y vim tar unzip dnsmasq wget net-tools curl openssh-server nano && \
-  apt-get install -y g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev && \
-  wget -q -o out.log -P /tmp https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz && \
-  tar xzf /tmp/protobuf-2.5.0.tar.gz -C /usr/local && \
-  cd /usr/local/protobuf-2.5.0 && \
+RUN mkdir -p /opt
+
+# Protocol buffers
+RUN wget -q -o out.log -P /tmp https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz && \
+  tar xzf /tmp/protobuf-2.5.0.tar.gz -C /opt && \
+  cd /opt/protobuf-2.5.0 && \
   ./autogen.sh && \
   ./configure --prefix=/usr && \
   make && \
   make check && \
   make install && \
-  protoc --version && \
-  apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
+  protoc --version 
+
+# Clean
+RUN apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
   rm -rf /var/lib/{apt,dpkg,cache,log}/ && \
   rm -rf /tmp
-
-# RUN apt-get install -y g++ autoconf automake libtool cmake zlib1g-dev pkg-config libssl-dev && \
-#  wget -q -o out.log -P /tmp https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz && \
-#  tar xzf /tmp/protobuf-2.5.0.tar.gz -C /usr/local && \
-#  cd /tmp/protobuf-2.5.0 && \
-#  ./autogen.sh && \
-#  ./configure --prefix=/usr && \
-#  make && \
-#  make check && \
-#  make install && \
-#  protoc --version
 
 # Java Version
 ENV JAVA_VERSION_MAJOR 8
@@ -65,16 +55,12 @@ RUN mkdir -p /opt &&\
          /opt/jdk/jre/lib/amd64/libjavafx*.so \
          /opt/jdk/jre/lib/amd64/libjfx*.so 
 
-# Set environment
-ENV JAVA_HOME /opt/jdk
-ENV PATH ${PATH}:${JAVA_HOME}/bin
-
 # move all configuration files into container
 ADD files/* /usr/local/  
 
-# set jave environment variable 
+# set environment variable 
 ENV JAVA_HOME /opt/jdk 
-ENV PATH $PATH:$JAVA_HOME/bin
+ENV PATH ${PATH}:${JAVA_HOME}/bin
 
 # configure ssh free key access
 RUN mkdir /var/run/sshd && \
@@ -83,42 +69,34 @@ RUN mkdir /var/run/sshd && \
   mv /usr/local/ssh_config ~/.ssh/config && \
   sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
-# install hadoop 2.7.3
+# Hadoop
 RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3-src.tar.gz && \
-  tar xzf /tmp/hadoop-2.7.3-src.tar.gz -C /usr/local && \
+  tar xzf /tmp/hadoop-2.7.3-src.tar.gz -C /opt && \
   rm /tmp/hadoop-2.7.3-src.tar.gz && \
-  mv /usr/local/hadoop-2.7.3-src /usr/local/hadoop && \
-  mv /usr/local/bashrc ~/.bashrc
-#  mv /usr/local/hadoop-env.sh /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+  mv /opt/hadoop-2.7.3-src /opt/hadoop
 
 # Scala
 RUN wget -q -o out.log -P /tmp http://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.tgz && \
-  tar xzf /tmp/scala-2.11.8.tgz -C /usr/local && \
+  tar xzf /tmp/scala-2.11.8.tgz -C /opt && \
   rm /tmp/scala-2.11.8.tgz && \
-  mv /usr/local/scala-2.11.8 /usr/local/scala
+  mv /opt/scala-2.11.8 /opt/scala
 
 # Sbt
 RUN wget -q -o out.log -P /tmp https://dl.bintray.com/sbt/native-packages/sbt/0.13.13/sbt-0.13.13.tgz && \
-  tar xzf /tmp/sbt-0.13.13.tgz -C /usr/local && \
+  tar xzf /tmp/sbt-0.13.13.tgz -C /opt && \
   rm /tmp/sbt-0.13.13.tgz && \
-  mv /usr/local/sbt-launcher-packaging-0.13.13 /usr/local/sbt
+  mv /opt/sbt-launcher-packaging-0.13.13 /opt/sbt
 
 # Spark
 RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/spark/spark-1.6.3/spark-1.6.3.tgz && \
-  tar xzf /tmp/spark-1.6.3.tgz -C /usr/local && \
+  tar xzf /tmp/spark-1.6.3.tgz -C /opt && \
   rm /tmp/spark-1.6.3.tgz && \
-  mv /usr/local/spark-1.6.3 /usr/local/spark
+  mv /opt/spark-1.6.3 /opt/spark
 
-# maven
-RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz && \
-  tar xzf /tmp/apache-maven-3.3.9-bin.tar.gz -C /usr/local && \
-  rm /tmp/apache-maven-3.3.9-bin.tar.gz && \
-  mv /usr/local/apache-maven-3.3.9 /usr/local/maven
+RUN mv /usr/local/bashrc ~/.bashrc
 
 RUN . ~/.bashrc && \
-  cd /usr/local/spark && \
-  # mvn clean package -Pdist,native -DskipTests -Dtar -Dmaven.javadoc.skip=true
-  # mvn clean -Dhadoop.version=2.7.3 -Pyarn -Phadoop-2.7 -DskipTests clean package
+  cd /opt/spark && \
   sbt assembly -Pyarn -Phadoop-2.7 -Pspark-ganglia-lgpl -Pkinesis-asl -Phive
 
 

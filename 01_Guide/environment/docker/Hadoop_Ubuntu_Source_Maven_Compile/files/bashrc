@@ -2,10 +2,10 @@ alias ll='ls -lhAF'
 
 export JAVA_HOME=/opt/jdk
 
-export MAVEN_HOME=/usr/local/maven
+export MAVEN_HOME=/opt/maven
 export PATH=$PATH:$MAVEN_HOME/bin
 
-export HADOOP_INSTALL=/usr/local/hadoop
+export HADOOP_INSTALL=/opt/hadoop
 export HADOOP_HOME=$HADOOP_INSTALL
 export PATH=$PATH:$HADOOP_INSTALL/bin
 export PATH=$PATH:$HADOOP_INSTALL/sbin
