@@ -4,12 +4,12 @@
 <configuration>
    <property>
    <name>hbase.rootdir</name>
-     <value>hdfs://master.test.com:9000/hbase</value>
+     <value>hdfs://master.trex.com:9000/hbase</value>
       <description>The directory shared by region servers. Should be fully-qualified to include the filesystem to use. E.g: hdfs://NAMENODE_SERVER:PORT/HBASE_ROOTDIR</description>
    </property>
    <property>
       <name>hbase.master</name>
-      <value>hdfs://master.test.com:60000</value>
+      <value>hdfs://master.trex.com:60000</value>
       <description>The host and port that the HBase master runs at.</description>
    </property>
    <property>
