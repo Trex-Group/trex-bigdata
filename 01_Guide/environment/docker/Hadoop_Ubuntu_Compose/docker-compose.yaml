@@ -1,0 +1,50 @@
+version: '2.0'
+services:
+  base-dnsmasq:
+    build:
+      context: ./base-dnsmasq/
+      dockerfile: Dockerfile
+    image: trex/base-dnsmasq
+  hadoop-base:
+    build:
+      context: ./hadoop-base/
+      dockerfile: Dockerfile
+    image: trex/hadoop-base
+    depends_on:
+      - base-dnsmasq
+  hadoop-master:
+    build:
+      context: ./hadoop-master/
+      dockerfile: Dockerfile
+    image: trex/hadoop-master
+    depends_on:
+      - hadoop-base
+  hadoop-slave:
+    build:
+      context: ./hadoop-slave/
+      dockerfile: Dockerfile
+    image: trex/hadoop-slave
+    depends_on:
+      - hadoop-base
+  hbase-base:
+    build:
+      context: ./hbase-base/
+      dockerfile: Dockerfile
+    image: trex/hbase-base
+    depends_on:
+      - hadoop-base
+  hbase-master:
+    build:
+      context: ./hbase-master/
+      dockerfile: Dockerfile
+    image: trex/hbase-master
+    depends_on:
+      - hbase-base
+  hbase-slave:
+    build:
+      context: ./hbase-slave/
+      dockerfile: Dockerfile
+    image: trex/hbase-slave
+    depends_on:
+      - hbase-base
+
