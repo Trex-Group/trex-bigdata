@@ -44,15 +44,15 @@ $ hdfs dfsadmin -report
 ```bash
 hadoop fs -mkdir /input
 hadoop fs -ls /
-hadoop fs -put /usr/local/hadoop/LICENSE.txt /input
-hadoop fs -put /usr/local/hadoop/NOTICE.txt /input
-hadoop fs -put /usr/local/hadoop/README.txt /input
+hadoop fs -put /opt/hadoop/LICENSE.txt /input
+hadoop fs -put /opt/hadoop/NOTICE.txt /input
+hadoop fs -put /opt/hadoop/README.txt /input
 hadoop fs -ls /input
 ```
 
 ### run jar
 ```bash
-hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
+hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
 ```
 
 

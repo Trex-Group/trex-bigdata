@@ -1,4 +1,4 @@
-FROM test/base-dnsmasq:latest
+FROM trex/base-dnsmasq:latest
 MAINTAINER xenron <xenron@hotmail.com>
 
 # install openssh-server
@@ -59,16 +59,16 @@ sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' 
 
 # install hadoop 2.7.3
 RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && \
-  tar xzf /tmp/hadoop-2.7.3.tar.gz -C /usr/local && \
+  tar xzf /tmp/hadoop-2.7.3.tar.gz -C /opt && \
   rm /tmp/hadoop-2.7.3.tar.gz && \
-  mv /usr/local/hadoop-2.7.3 /usr/local/hadoop && \
+  mv /opt/hadoop-2.7.3 /opt/hadoop && \
   mv /usr/local/bashrc ~/.bashrc && \
-  mv /usr/local/hadoop-env.sh /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+  mv /usr/local/hadoop-env.sh /opt/hadoop/etc/hadoop/hadoop-env.sh
 
 # install hive 2.1.1
 RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hive/hive-2.1.1/apache-hive-2.1.1-bin.tar.gz && \
-  tar xzf /tmp/apache-hive-2.1.1-bin.tar.gz -C /usr/local && \
+  tar xzf /tmp/apache-hive-2.1.1-bin.tar.gz -C /opt && \
   rm /tmp/apache-hive-2.1.1-bin.tar.gz && \
-  mv /usr/local/apache-hive-2.1.1-bin /usr/local/hive
+  mv /opt/apache-hive-2.1.1-bin /opt/hive
 
 

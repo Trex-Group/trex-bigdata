@@ -1,11 +1,11 @@
-FROM test/hadoop-base:latest
+FROM trex/hadoop-base:latest
 MAINTAINER xenron <xenron@hotmail.com>
 
 # move all confugration files into container
 ADD files/hadoop/* /tmp/
 ADD files/init/* /tmp/
 
-ENV HADOOP_INSTALL /usr/local/hadoop
+ENV HADOOP_INSTALL /opt/hadoop
 
 RUN mkdir -p ~/hdfs/namenode && \
 mkdir -p ~/zookeeper && \ 
@@ -29,7 +29,7 @@ chmod +x ~/configure-members.sh  && \
 chmod 1777 tmp
 
 # format namenode
-RUN /usr/local/hadoop/bin/hdfs namenode -format
+RUN /opt/hadoop/bin/hdfs namenode -format
 
 EXPOSE 22 7373 7946 9000 50010 50020 50070 50075 50090 50475 8030 8031 8032 8033 8040 8042 8060 8088 50060
 

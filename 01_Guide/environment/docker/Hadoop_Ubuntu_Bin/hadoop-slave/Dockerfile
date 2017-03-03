@@ -1,10 +1,10 @@
-FROM test/hadoop-base:latest
+FROM trex/hadoop-base:latest
 MAINTAINER xenron <xenron@hotmail.com>
 
 # move all confugration /tmp into container
 ADD files/hadoop/* /tmp/
 
-ENV HADOOP_INSTALL /usr/local/hadoop
+ENV HADOOP_INSTALL /opt/hadoop
 
 #RUN mkdir $HADOOP_INSTALL/logs
 
