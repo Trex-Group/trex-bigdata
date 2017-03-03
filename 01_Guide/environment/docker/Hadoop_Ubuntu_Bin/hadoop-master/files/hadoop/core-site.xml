@@ -3,7 +3,7 @@
 <configuration>
    <property>
     	<name>fs.defaultFS</name>
-    	<value>hdfs://master.test.com:9000/</value>
+    	<value>hdfs://master.trex.com:9000/</value>
     	<description>The name of the default file system. A URI whose scheme and authority determine the FileSystem implementation. The uri's scheme determines the config property (fs.SCHEME.impl) naming the FileSystem implementation class. The uri's authority is used to determine the host, port, etc. for a filesystem.</description>
    </property>
 </configuration>

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 image=$1
-image_name='test'
+image_name='trex'
 tag='latest'
 
 

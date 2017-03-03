@@ -14,11 +14,11 @@ fi
 cd hadoop-master
 
 # change the slaves file
-echo "master.test.com" > files/slaves
+echo "master.trex.com" > files/slaves
 i=1
 while [ $i -lt $N ]
 do
-	echo "slave$i.test.com" >> files/slaves
+	echo "slave$i.trex.com" >> files/slaves
 	((i++))
 done 
 
@@ -26,9 +26,9 @@ done
 docker rm -f master 
 
 # delete hadoop-master image
-docker rmi test/hadoop-master:$tag 
+docker rmi trex/hadoop-master:$tag 
 
 # rebuild hadoop-docker image
 pwd
-docker build -t test/hadoop-master:$tag .
+docker build -t trex/hadoop-master:$tag .
 
