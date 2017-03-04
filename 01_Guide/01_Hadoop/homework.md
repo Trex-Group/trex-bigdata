@@ -1,5 +1,5 @@
 # Virtual Box Env
-安装Virtual Box虚拟机环境<br>
+安装Virtual Box虚拟机环境</br>
 
 # Hadoop VirtualBox Image
 复制 Hadoop VirtualBox Image 到自己的电脑上<br>
