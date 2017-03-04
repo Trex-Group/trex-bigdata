@@ -1,11 +1,11 @@
-①事前知識 
-git、docker、linux 
-②Hadoop分散処理の紹介 
-アーキテクチャの説明 
-③Hadoopディストリビューションの紹介 
-Apache Hadoop、Cloudera、Hortonworks、Mapr 
-④Hadoop分散処理環境の構築 
-ァ．標準Hadoop環境の構築 
-ィ．Cloudear Hadoop 
-ゥ．Hadoop on Docker 
-⑤Hadoopの基本操作 
+①事前知識
+linux、docker、git
+②Hadoop分散処理の紹介
+アーキテクチャの説明
+③Hadoopディストリビューションの紹介
+Apache Hadoop、Cloudera、Hortonworks、Mapr
+④Hadoop分散処理環境の構築
+ァ．標準Hadoop環境の構築
+ィ．Cloudear Hadoop
+ゥ．Hadoop on Docker
+⑤Hadoopの基本操作

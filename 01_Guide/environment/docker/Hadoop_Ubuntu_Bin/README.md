@@ -9,6 +9,7 @@ $ ./build-image.sh hbase-base
 # Start Container
 
 ```bash
+$ cd ~
 $ ./start-hadoop-container.sh latest 3
 # start master container...
 # start slave1 container...
