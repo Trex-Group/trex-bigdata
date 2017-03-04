@@ -33,5 +33,8 @@ cd Big-Data/01_Guide/environment/docker/Hadoop_Ubuntu_Bin/
 按照下面页面进行测试
 https://github.com/trex-group/Big-Data/tree/master/01_Guide/environment/docker/Hadoop_Ubuntu_Bin
 
-
+# Cloudera
+部署 QuickStart VirtualBox Image
+https://www.cloudera.com/downloads/quickstart_vms/5-8.html
+https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.8.0-0-virtualbox.zip
 
