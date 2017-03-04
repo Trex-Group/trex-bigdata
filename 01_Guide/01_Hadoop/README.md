@@ -2,46 +2,50 @@
 # ①事前知識
 linux、docker、git
 
-**RedHat**
-https://www.redhat.com/en
-**CentOS**
-https://www.centos.org/
-https://www.centos.org/download/
-https://wiki.centos.org/Download
-**Ubuntu**
-https://www.ubuntu.com/
-http://releases.ubuntu.com/
+**RedHat**<br>
+https://www.redhat.com/en<br>
+**CentOS**<br>
+https://www.centos.org/<br>
+https://www.centos.org/download/<br>
+https://wiki.centos.org/Download<br>
+**Ubuntu**<br>
+https://www.ubuntu.com/<br>
+http://releases.ubuntu.com/<br>
 
-**git**
-https://git-scm.com/
-**github**
-https://github.com/
+**git**<br>
+https://git-scm.com/<br>
+**github**<br>
+https://github.com/<br>
 
-**Virtual Box**
-https://www.virtualbox.org/
-https://www.virtualbox.org/wiki/Downloads
+**Virtual Box**<br>
+https://www.virtualbox.org/<br>
+https://www.virtualbox.org/wiki/Downloads<br>
 
-**docker**
-https://www.docker.com/
+**docker**<br>
+https://www.docker.com/<br>
 
 
 # ②Hadoop分散処理の紹介
+
 アーキテクチャの説明
 
 # ③Hadoopディストリビューションの紹介
+
 Apache Hadoop、Cloudera、Hortonworks、Mapr
 
-**Cloudera**
-https://www.cloudera.com/
-https://www.cloudera.com/downloads.html
+**Cloudera**<br>
+https://www.cloudera.com/<br>
+https://www.cloudera.com/downloads.html<br>
 
 # ④Hadoop分散処理環境の構築
+
 ァ．標準Hadoop環境の構築
 
-ィ．Cloudear Hadoop
-QuickStarts
+ィ．Cloudear Hadoop<br>
+QuickStarts<br>
 
 ゥ．Hadoop on Docker
 
 # ⑤Hadoopの基本操作
+
 https://hadoop.apache.org/docs/r1.0.4/cn/hdfs_shell.html

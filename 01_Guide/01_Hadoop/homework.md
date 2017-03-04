@@ -1,12 +1,12 @@
 # Virtual Box Env
-安装Virtual Box虚拟机环境</br>
+安装Virtual Box虚拟机环境<br>
 
 # Hadoop VirtualBox Image
-复制 Hadoop VirtualBox Image 到自己的电脑上</br>
-在 VirtualBox 环境中，导入 Hadoop VirtualBox Image</br>
-根据自己的硬件环境，调整虚拟机节点的内存</br>
-开启3个虚拟机节点（NameNode，DataNode-1，DataNode-2）</br>
-运行 WordCount</br>
+复制 Hadoop VirtualBox Image 到自己的电脑上<br>
+在 VirtualBox 环境中，导入 Hadoop VirtualBox Image<br>
+根据自己的硬件环境，调整虚拟机节点的内存<br>
+开启3个虚拟机节点（NameNode，DataNode-1，DataNode-2）<br>
+运行 WordCount<br>
 
 # Hadoop VirtualBox Image Customize
 在三个虚拟机节点，新建 hadoop 用户<br>
