@@ -5,7 +5,7 @@ MAINTAINER xenron <xenron@hotmail.com>
 ADD files/hadoop/* /tmp/
 ADD files/hbase/* /tmp/
 
-ENV HADOOP_INSTALL /usr/local/hadoop
+ENV HADOOP_INSTALL /opt/hadoop
 
 #RUN mkdir $HADOOP_INSTALL/logs
 
@@ -13,7 +13,7 @@ RUN mv /tmp/hdfs-site.xml $HADOOP_INSTALL/etc/hadoop/hdfs-site.xml && \
 mv /tmp/core-site.xml $HADOOP_INSTALL/etc/hadoop/core-site.xml && \
 mv /tmp/mapred-site.xml $HADOOP_INSTALL/etc/hadoop/mapred-site.xml && \
 mv /tmp/yarn-site.xml $HADOOP_INSTALL/etc/hadoop/yarn-site.xml && \
-mv /tmp/hbase-site.xml /usr/local/hbase/conf/hbase-site.xml
+mv /tmp/hbase-site.xml /opt/hbase/conf/hbase-site.xml
 
 RUN mv /tmp/start-ssh-serf.sh ~/start-ssh-serf.sh && \
 chmod +x ~/start-ssh-serf.sh

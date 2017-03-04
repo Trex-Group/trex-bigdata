@@ -1,0 +1,23 @@
+version: '2.0'
+services:
+  hbase-master:
+    build:
+      context: ./hadoop-master
+      dockerfile: Dockerfile
+    image: trex/hadoop-master
+    container_name: master
+    hostname: master.test.com
+  hbase-datanode-1:
+    build:
+      context: ./hadoop-slave
+      dockerfile: Dockerfile
+    image: trex/hadoop-slave
+    container_name: slave1
+    hostname: slave1.test.com
+  hbase-datanode-2:
+    build:
+      context: ./hadoop-slave
+      dockerfile: Dockerfile
+    image: trex/hadoop-slave
+    container_name: slave2
+    hostname: slave2.test.com

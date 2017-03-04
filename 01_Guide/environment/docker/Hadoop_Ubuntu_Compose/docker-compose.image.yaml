@@ -1,17 +1,17 @@
 version: '2.0'
 services:
-  base-dnsmasq:
+  base:
     build:
-      context: ./base-dnsmasq/
+      context: ./base/
       dockerfile: Dockerfile
-    image: trex/base-dnsmasq
+    image: trex/base
   hadoop-base:
     build:
       context: ./hadoop-base/
       dockerfile: Dockerfile
     image: trex/hadoop-base
     depends_on:
-      - base-dnsmasq
+      - base
   hadoop-master:
     build:
       context: ./hadoop-master/
