@@ -79,9 +79,9 @@ ENV PATH $PATH:$JAVA_HOME/bin
 
 #configure ssh free key access
 RUN mkdir /var/run/sshd && \
-ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
-mv /usr/local/ssh_config ~/.ssh/config && \
-sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+  ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
+  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
+  mv /usr/local/ssh_config ~/.ssh/config && \
+  sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 

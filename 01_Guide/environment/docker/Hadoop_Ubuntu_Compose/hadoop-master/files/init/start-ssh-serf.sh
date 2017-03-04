@@ -5,11 +5,12 @@ echo "start sshd..."
 service ssh start
 
 # start sef
-echo -e "\nstart serf..." 
-/etc/serf/start-serf-agent.sh > serf_log &
+# echo -e "\nstart serf..." 
+# /etc/serf/start-serf-agent.sh > serf_log &
 
-sleep 5
+# sleep 5
 
-serf members
+# serf members
 
-echo -e "\nhadoop-cluster-docker "
+# echo -e "\nhadoop-cluster-docker "
+
