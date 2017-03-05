@@ -7,6 +7,9 @@ services:
     image: trex/hadoop-master
     container_name: master.trex.com
     hostname: master.trex.com
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
   hadoop-datanode-1:
     build:
       context: ./hadoop-slave
@@ -14,6 +17,9 @@ services:
     image: trex/hadoop-slave
     container_name: slave1.trex.com
     hostname: slave1.trex.com
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
   hadoop-datanode-2:
     build:
       context: ./hadoop-slave
@@ -21,4 +27,7 @@ services:
     image: trex/hadoop-slave
     container_name: slave2.trex.com
     hostname: slave2.trex.com
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
 
