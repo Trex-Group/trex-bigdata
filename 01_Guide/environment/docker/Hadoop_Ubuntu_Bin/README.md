@@ -43,17 +43,17 @@ $ hdfs dfsadmin -report
 ### upload file
 
 ```bash
-hadoop fs -mkdir /input
-hadoop fs -ls /
-hadoop fs -put /opt/hadoop/LICENSE.txt /input
-hadoop fs -put /opt/hadoop/NOTICE.txt /input
-hadoop fs -put /opt/hadoop/README.txt /input
-hadoop fs -ls /input
+$HADOOP_HOME/bin/hadoop fs -mkdir /input
+$HADOOP_HOME/bin/hadoop fs -ls /
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/LICENSE.txt /input
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/NOTICE.txt /input
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/README.txt /input
+$HADOOP_HOME/bin/hadoop fs -ls /input
 ```
 
 ### run jar
 ```bash
-hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
 ```
 
 

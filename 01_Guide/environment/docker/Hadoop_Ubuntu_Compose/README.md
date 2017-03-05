@@ -56,3 +56,38 @@ cd ~
 
 ```
 
+
+# Start Hadoop
+
+```bash
+$ ./start-hadoop.sh
+
+$ jps
+$ hdfs dfsadmin -report
+```
+
+# WordCount
+
+### upload file
+
+```bash
+$HADOOP_HOME/bin/hadoop fs -mkdir /input
+$HADOOP_HOME/bin/hadoop fs -ls /
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/LICENSE.txt /input
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/NOTICE.txt /input
+$HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/README.txt /input
+$HADOOP_HOME/bin/hadoop fs -ls /input
+```
+
+### run jar
+
+```bash
+hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
+```
+
+### check result
+
+```bash
+$HADOOP_HOME/bin/hadoop fs -ls /output
+$HADOOP_HOME/bin/hadoop fs -cat /output/part-r-00000
+```
