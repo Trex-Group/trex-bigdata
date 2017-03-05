@@ -22,17 +22,37 @@ docker-compose rm
 docker-compost -f down
 ```
 
+# master container
 
 ```bash
 # test
 docker exec -it master.trex.com bash
-/root/start-ssh-serf.sh
 
+cd ~
+/root/start-sshd.sh
+/root/configure-members.sh
+/root/start-hadoop.sh
+```
+
+# slave1 container
+
+```bash
 docker exec -it slave1.trex.com bash
-/root/start-ssh-serf.sh
+```
 
+```bash
+cd ~
+/root/start-sshd.sh
+```
+
+# slave2 container
+```bash
 docker exec -it slave2.trex.com bash
-/root/start-ssh-serf.sh
+```
+
+```bash
+cd ~
+/root/start-sshd.sh
 
 ```
 
