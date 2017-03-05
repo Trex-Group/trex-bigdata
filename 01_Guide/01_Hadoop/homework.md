@@ -22,7 +22,7 @@
 
 # CentOS
 新建3个虚拟机节点，安装 CentOS 操作系统<br>
-按照 NameNode，DataNode-1，DataNode-2 方式进行 Hadoop 部署<br>
+按照 NameNode，DataNode-1，DataNode-2 方式进行 Hadoop 集群环境部署<br>
 
 # Docker Env
 安装 Docker 环境<br>

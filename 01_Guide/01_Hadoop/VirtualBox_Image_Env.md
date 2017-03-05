@@ -7,7 +7,11 @@ username:testuser<br>
 password:testuser<br>
 
 # Node
-/etc/network/interfaces<br>
+
+```bash
+/etc/network/interfaces
+```
+
 Hadoop-NameNode 192.168.101.231<br>
 Hadoop-DataNode-1 192.168.101.232<br>
 Hadoop-DataNode-2 192.168.101.233<br>

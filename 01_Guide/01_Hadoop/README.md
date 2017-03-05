@@ -43,9 +43,12 @@ https://www.cloudera.com/downloads.html<br>
 
 ィ．Cloudear Hadoop<br>
 QuickStarts<br>
+https://www.cloudera.com/downloads/quickstart_vms/5-8.html<br>
+https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.8.0-0-virtualbox.zip<br>
 
 ゥ．Hadoop on Docker
+https://github.com/trex-group/Big-Data/blob/master/01_Guide/environment/docker/Hadoop_Ubuntu_Bin/README.md<br>
 
 # ⑤Hadoopの基本操作
 
-https://hadoop.apache.org/docs/r1.0.4/cn/hdfs_shell.html
+https://hadoop.apache.org/docs/r1.0.4/cn/hdfs_shell.html<br>
