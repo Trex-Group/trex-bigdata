@@ -1,14 +1,14 @@
 
 # Ubuntu
-username:root
-password:ubuntu
+username:root<br>
+password:ubuntu<br>
 
-username:testuser
-password:testuser
+username:testuser<br>
+password:testuser<br>
 
 # Node
-/etc/network/interfaces
-Hadoop-NameNode 192.168.101.231
-Hadoop-DataNode-1 192.168.101.232
-Hadoop-DataNode-2 192.168.101.233
+/etc/network/interfaces<br>
+Hadoop-NameNode 192.168.101.231<br>
+Hadoop-DataNode-1 192.168.101.232<br>
+Hadoop-DataNode-2 192.168.101.233<br>
 
