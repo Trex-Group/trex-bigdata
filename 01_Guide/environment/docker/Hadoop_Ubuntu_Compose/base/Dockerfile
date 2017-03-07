@@ -7,7 +7,7 @@ RUN apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
   apt-get update -y && \
   echo "`cat /etc/issue.net` Docker Image - philcryer/min-wheezy - `date +'%Y/%m/%d'`" > /etc/motd
 
-RUN apt-get install -y vim tar unzip dnsmasq wget net-tools  && \
+RUN apt-get install -y vim tar unzip dnsmasq wget net-tools && \
   apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y
 #  rm -rf /var/lib/{apt,dpkg,cache,log}/ && \
 #  rm -rf /tmp
@@ -84,4 +84,6 @@ RUN mkdir /var/run/sshd && \
   mv /usr/local/ssh_config ~/.ssh/config && \
   sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
+# RUN sysv-rc-conf sshd on
+# RUN sed -i '/exit 0/ i /etc/init.d/ssh start' /etc/rc.local
 
