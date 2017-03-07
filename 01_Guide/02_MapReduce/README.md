@@ -13,11 +13,11 @@ https://gradle.org/install<br>
 install<br>
 https://github.com/trex-group/Big-Data/blob/master/01_Guide/environment/Manual/Gradle.pdf<br>
 
-**Idea**
+**Idea**<br>
 https://www.jetbrains.com/idea/<br>
 Community Edition<br>
 
-**Eclipse**
+**Eclipse**<br>
 https://eclipse.org/<br>
 https://www.eclipse.org/downloads/<br>
 
