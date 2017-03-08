@@ -38,7 +38,7 @@ $ jps
 $ hdfs dfsadmin -report
 ```
 
-# WordCount
+# WordCount-1
 
 ### upload file
 
@@ -57,10 +57,16 @@ $HADOOP_HOME/bin/hadoop fs -ls /input
 hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
 ```
 
+### check result
+
 ```bash
 $HADOOP_HOME/bin/hadoop fs -ls /output
 $HADOOP_HOME/bin/hadoop fs -cat /output/part-r-00000
 ```
+
+# WordCount-2
+
+### upload file
 
 ```bash
 $HADOOP_HOME/bin/hadoop fs -mkdir /user
@@ -72,13 +78,15 @@ $HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/LICENSE.txt /user/root/input
 $HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/NOTICE.txt /user/root/input
 $HADOOP_HOME/bin/hadoop fs -put $HADOOP_HOME/README.txt /user/root/input
 $HADOOP_HOME/bin/hadoop fs -ls /user/root/input
-
 ```
 
 ### run jar
+
 ```bash
 hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/root/input /user/root/output
 ```
+
+### check result
 
 ```bash
 $HADOOP_HOME/bin/hadoop fs -ls /user/root/output
