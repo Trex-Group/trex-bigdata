@@ -35,7 +35,7 @@ $ ./configure-members.sh
 $ ./start-hadoop.sh
 
 $ jps
-$ hdfs dfsadmin -report
+$HADOOP_HOME/bin/hdfs dfsadmin -report
 ```
 
 # WordCount-1
@@ -54,7 +54,7 @@ $HADOOP_HOME/bin/hadoop fs -ls /input
 
 ### run jar
 ```bash
-hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
+$HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /input /output
 ```
 
 ### check result
@@ -83,7 +83,7 @@ $HADOOP_HOME/bin/hadoop fs -ls /user/root/input
 ### run jar
 
 ```bash
-hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/root/input /user/root/output
+$HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/root/input /user/root/output
 ```
 
 ### check result
@@ -92,4 +92,5 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.j
 $HADOOP_HOME/bin/hadoop fs -ls /user/root/output
 $HADOOP_HOME/bin/hadoop fs -cat /user/root/output/part-r-00000
 ```
+
 
