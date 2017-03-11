@@ -17,11 +17,9 @@ Season 4 ( E07-E15)
 
 # Around US
 
-### quadcopters
+### quadcopters 四轴飞行器
 The astounding athletic power of quadcopters | Raffaello D'Andrea<br>
 四轴飞行器灵活的运动性能<br>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=w2itwFJCgFQ" frameborder="0" allowfullscreen></iframe>
 https://www.youtube.com/watch?v=w2itwFJCgFQ<br>
 2:30-3:40<br>
 
-### 
