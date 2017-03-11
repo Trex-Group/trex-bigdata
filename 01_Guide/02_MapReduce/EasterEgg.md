@@ -23,3 +23,10 @@ The astounding athletic power of quadcopters | Raffaello D'Andrea<br>
 https://www.youtube.com/watch?v=w2itwFJCgFQ<br>
 2:30-3:40<br>
 
+### TensorFlow
+https://www.tensorflow.org/<br>
+http://playground.tensorflow.org/<br>
+
+
+
+
