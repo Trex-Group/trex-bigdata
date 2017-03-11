@@ -30,3 +30,6 @@ https://www.youtube.com/watch?v=w2itwFJCgFQ<br>
 https://www.tensorflow.org/<br>
 http://playground.tensorflow.org/<br>
 
+### Deep Learning Is Revolutionary
+https://medium.com/transmission-newsletter/deep-learning-is-revolutionary-d0f3667bafa0
+
