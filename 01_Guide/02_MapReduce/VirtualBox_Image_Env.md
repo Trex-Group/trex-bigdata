@@ -12,8 +12,6 @@ password:testuser<br>
 /etc/network/interfaces
 ```
 
-Develop-Hadoop 192.168.101.230<br>
-Hadoop-NameNode 192.168.101.231<br>
-Hadoop-DataNode-1 192.168.101.232<br>
-Hadoop-DataNode-2 192.168.101.233<br>
+Hadoop-Develop 192.168.101.230<br>
+Hadoop-Server 192.168.101.231<br>
 
