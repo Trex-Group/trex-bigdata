@@ -1,28 +1,28 @@
 
 # Three Laws of Robotics
-https://zh.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%89%E5%AE%9A%E5%BE%8B
+https://zh.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%89%E5%AE%9A%E5%BE%8B<br>
 
-µÚÒ»·¨Ôò£º»úÆ÷ÈË²»µÃÉËº¦ÈËÀà£¬»òÒò²»×÷Îª(ĞäÊÖÅÔ¹Û)Ê¹ÈËÀàÊÜµ½ÉËº¦¡£
-µÚ¶ş·¨Ôò£º³ı·ÇÎ¥±³µÚÒ»·¨Ôò£¬»úÆ÷ÈË±ØĞë·ş´ÓÈËÀàµÄÃüÁî¡£
-µÚÈı·¨Ôò£ºÔÚ²»Î¥±³µÚÒ»¼°µÚ¶ş·¨ÔòÏÂ£¬»úÆ÷ÈË±ØĞë±£»¤×Ô¼º¡£
+ç¬¬ä¸€æ³•åˆ™ï¼šæœºå™¨äººä¸å¾—ä¼¤å®³äººç±»ï¼Œæˆ–å› ä¸ä½œä¸º(è¢–æ‰‹æ—è§‚)ä½¿äººç±»å—åˆ°ä¼¤å®³ã€‚<br>
+ç¬¬äºŒæ³•åˆ™ï¼šé™¤éè¿èƒŒç¬¬ä¸€æ³•åˆ™ï¼Œæœºå™¨äººå¿…é¡»æœä»äººç±»çš„å‘½ä»¤ã€‚<br>
+ç¬¬ä¸‰æ³•åˆ™ï¼šåœ¨ä¸è¿èƒŒç¬¬ä¸€åŠç¬¬äºŒæ³•åˆ™ä¸‹ï¼Œæœºå™¨äººå¿…é¡»ä¿æŠ¤è‡ªå·±ã€‚<br>
 
 ### I, Robots
-https://zh.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%85%AC%E6%95%B5_(%E9%9B%BB%E5%BD%B1)
-https://movie.douban.com/subject/1308843/
+https://zh.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%85%AC%E6%95%B5_(%E9%9B%BB%E5%BD%B1)<br>
+https://movie.douban.com/subject/1308843/<br>
 
 ### Agents of S.H.I.E.L.D.
-https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%9B%BE%E5%B1%80%E7%89%B9%E5%B7%A5
-https://movie.douban.com/subject/26740391/
-Season 4 ( E07-E15)
+https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%9B%BE%E5%B1%80%E7%89%B9%E5%B7%A5<br>
+https://movie.douban.com/subject/26740391/<br>
+Season 4 ( E07-E15 ) <br>
 
 ### Westworld
 Season 1
 
 # Around US
 
-### quadcopters ËÄÖá·ÉĞĞÆ÷
+### quadcopters å››è½´é£è¡Œå™¨
 The astounding athletic power of quadcopters | Raffaello D'Andrea<br>
-ËÄÖá·ÉĞĞÆ÷Áé»îµÄÔË¶¯ĞÔÄÜ<br>
+å››è½´é£è¡Œå™¨çµæ´»çš„è¿åŠ¨æ€§èƒ½<br>
 https://www.youtube.com/watch?v=w2itwFJCgFQ<br>
 2:30-3:40<br>
 
