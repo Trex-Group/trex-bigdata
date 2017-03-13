@@ -1,6 +1,6 @@
 
 # 导入 Map-Reduce VirtualBox Image
-1) 复制第二课的 Hadoop VirtualBox Image 到自己的电脑上<br>
+1) 复制第二课的 Hadoop VirtualBox Image（Trex_02_Hadoop_MapReduce中的两个节点） 到自己的电脑上<br>
 2) 在 VirtualBox 环境中，导入 Hadoop VirtualBox Image（Hadoop-Develop 和 Hadoop-Server）<br>
 3) 根据自己的硬件环境，调整虚拟机节点的内存，网卡名称，ip地址<br>
 4) 开启2个虚拟机节点（Hadoop-Develop，Hadoop-Server）<br>
