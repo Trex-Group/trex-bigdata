@@ -2,7 +2,7 @@
 安装Virtual Box虚拟机环境<br>
 
 # Hadoop VirtualBox Image
-复制 Hadoop VirtualBox Image 到自己的电脑上<br>
+复制 Hadoop VirtualBox Image（Trex_01_Hadoop目录下的三个节点） 到自己的电脑上<br>
 在 VirtualBox 环境中，导入 Hadoop VirtualBox Image<br>
 根据自己的硬件环境，调整虚拟机节点的内存，网卡名称，ip地址<br>
 开启3个虚拟机节点（NameNode，DataNode-1，DataNode-2）<br>
