@@ -12,6 +12,9 @@ https://wiki.centos.org/Download<br>
 https://www.ubuntu.com/<br>
 http://releases.ubuntu.com/<br>
 
+**Linux知識勉強 Video**<br>
+http://www.imooc.com/course/list?c=linux<br>
+
 **git**<br>
 https://git-scm.com/<br>
 **github**<br>
