@@ -1,0 +1,5 @@
+
+# compile
+mvn clean package
+
+
