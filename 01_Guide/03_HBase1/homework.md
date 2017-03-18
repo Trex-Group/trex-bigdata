@@ -47,26 +47,4 @@ https://github.com/trex-group/Big-Data/blob/master/01_Guide/environment/Manual/O
 （下面资料为Ubuntu环境下Hadoop的搭建方法，CentOS的软件安装方法稍有区别，需要自己查询相关资料）<br>
 https://github.com/trex-group/Big-Data/blob/master/01_Guide/environment/Manual/Hadoop_Ubuntu_14.04.pdf<br>
 
-# HBase Docker Container
-
-难度等级：★★<br>
-预计时间：2 hours<br>
-
-1) 按照下面命令，下载 docker 环境脚本<br>
-```bash
-git clone https://github.com/trex-group/Big-Data.git
-cd Big-Data/01_Guide/environment/docker/Hadoop_Ubuntu_Bin/
-```
-2) 按照下面页面进行部署、确认<br>
-https://github.com/trex-group/Big-Data/blob/master/01_Guide/environment/docker/Hadoop_Ubuntu_Bin/README.md<br>
-
-
-# Cloudera QuickStart 环境部署
-
-难度等级：★<br>
-预计时间：30 minus<br>
-
-部署 QuickStart VirtualBox Image<br>
-https://www.cloudera.com/downloads/quickstart_vms/5-8.html<br>
-https://downloads.cloudera.com/demo_vm/virtualbox/cloudera-quickstart-vm-5.8.0-0-virtualbox.zip<br>
 
