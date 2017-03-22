@@ -17,7 +17,7 @@
 # start slave2 container...
 ```
 
-# Serf agent
+## Serf agent
 
 ```bash
 serf members
@@ -30,7 +30,7 @@ cd ~
 ./configure-members.sh
 ```
 
-# Start Hadoop
+## Start Hadoop
 
 ```bash
 ./start-hadoop.sh
@@ -39,7 +39,7 @@ jps
 $HADOOP_HOME/bin/hdfs dfsadmin -report
 ```
 
-# WordCount-1
+## WordCount-1
 
 ### upload file
 
@@ -65,7 +65,7 @@ $HADOOP_HOME/bin/hadoop fs -ls /output
 $HADOOP_HOME/bin/hadoop fs -cat /output/part-r-00000
 ```
 
-# WordCount-2
+## WordCount-2
 
 ### upload file
 
@@ -104,7 +104,7 @@ $HADOOP_HOME/bin/hadoop fs -cat /user/root/output/part-r-00000
 # start slave2 container...
 ```
 
-# Serf agent
+## Serf agent
 
 ```bash
 serf members
@@ -117,7 +117,7 @@ cd ~
 ./configure-members.sh
 ```
 
-# Start Hadoop
+## Start Hadoop & HBase
 
 ```bash
 ./start-hadoop.sh
@@ -126,14 +126,12 @@ jps
 $HADOOP_HOME/bin/hdfs dfsadmin -report
 ```
 
-
+## HBase Shell
 ```
 cd ~
 ./start-hbase.sh
 ```
 
-
-test hbase shell
 ```
 hbase(main):001:0> $ status
 hbase(main):002:0> $ create 'album','label','image'
