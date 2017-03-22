@@ -1,16 +1,17 @@
+
 # Create Image
 
 ```bash
-$ ./build-image.sh base-dnsmasq
-$ ./build-image.sh hadoop-base
-$ ./build-image.sh hbase-base
+./build-image.sh base-dnsmasq
+./build-image.sh hadoop-base
+./build-image.sh hbase-base
 ```
 
-# Start Container
+# Start Hadoop Container
 
 ```bash
-$ cd ~
-$ ./start-hadoop-container.sh latest 3
+./start-hadoop-container.sh latest 3
+
 # start master container...
 # start slave1 container...
 # start slave2 container...
@@ -19,22 +20,22 @@ $ ./start-hadoop-container.sh latest 3
 # Serf agent
 
 ```bash
-$ serf members
+serf members
 
 # master.trex.com  172.17.0.2:7946  alive  
 # slave1.trex.com  172.17.0.3:7946  alive
 # slave2.trex.com  172.17.0.4:7946  alive
 
-$ cd ~
-$ ./configure-members.sh
+cd ~
+./configure-members.sh
 ```
 
 # Start Hadoop
 
 ```bash
-$ ./start-hadoop.sh
+./start-hadoop.sh
 
-$ jps
+jps
 $HADOOP_HOME/bin/hdfs dfsadmin -report
 ```
 
@@ -92,5 +93,57 @@ $HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce
 $HADOOP_HOME/bin/hadoop fs -ls /user/root/output
 $HADOOP_HOME/bin/hadoop fs -cat /user/root/output/part-r-00000
 ```
+
+# Start HBase Container
+
+```bash
+./start-hbase-container.sh latest 3
+
+# start master container...
+# start slave1 container...
+# start slave2 container...
+```
+
+# Serf agent
+
+```bash
+serf members
+
+# master.trex.com  172.17.0.2:7946  alive
+# slave1.trex.com  172.17.0.3:7946  alive
+# slave2.trex.com  172.17.0.4:7946  alive
+
+cd ~
+./configure-members.sh
+```
+
+# Start Hadoop
+
+```bash
+./start-hadoop.sh
+
+jps
+$HADOOP_HOME/bin/hdfs dfsadmin -report
+```
+
+
+```
+cd ~
+./start-hbase.sh
+```
+
+
+test hbase shell
+```
+hbase(main):001:0> $ status
+hbase(main):002:0> $ create 'album','label','image'
+hbase(main):003:0> $ put 'album','label1','label:size','10'
+hbase(main):004:0> $ put 'album','label1','label:color','255:255:255'
+hbase(main):005:0> $ put 'album','label1','label:text','Family album'
+hbase(main):006:0> $ put 'album','label1','image:name','holiday'
+hbase(main):007:0> $ put 'album','label1','image:source','/tmp/pic1.jpg'
+hbase(main):008:0> $ get 'album','label1'
+```
+
 
 

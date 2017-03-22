@@ -1,6 +1,6 @@
 #!/bin/bash
-hadoop_home=/usr/local/hbase
-cd $hadoop_home
+hbase_home=/opt/hbase
+cd $hbase_home
 echo -e "starting hbase \n"
 ./bin/start-hbase.sh
 
