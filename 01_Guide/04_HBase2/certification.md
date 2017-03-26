@@ -9,15 +9,15 @@ http://www.cloudera.co.jp/university/certification.html
 |type|short name|full name|exam|point|price|
 |---|:---|:---|:---|:---|:---:|
 |CDH4|CCDH|Cloudera Certified Developer for Apache Hadoop|CCA-410|Developer|USD $295|
-|CCAH|Cloudera Certified Administrator for Apache Hadoop|CCD-410|Administrator|USD $295|
-|CCSHB|Cloudera Certified Specialist in Apache HBase|CCB-400|HBASE|USD $295|
+|CDH4||CCAH|Cloudera Certified Administrator for Apache Hadoop|CCD-410|Administrator|USD $295|
+|CDH4||CCSHB|Cloudera Certified Specialist in Apache HBase|CCB-400|HBASE|USD $295|
 |CDH5|CCAH|Cloudera Certified Administrator for Apache Hadoop|CCA-500|Administrator|USD $295|
-|||Cloudera Certified Associate Spark and Hadoop Developer|CCA-175|Developer|USD $295|
-|||Cloudera Certified Associate Data Analyst|CCA-159|ETL|USD $295|
-|||CCP Data Engineer|DE-575|HBASE|USD $400|
-|||CCP Data Scientist|DS-700||USD $600|
-|||CCP Data Scientist|DS-701||USD $600|
-|||CCP Data Scientist|DS-702||USD $600|
+|CDH5|Cloudera Certified Associate Spark and Hadoop Developer|CCA-175|Developer|USD $295|
+|CDH5|Cloudera Certified Associate Data Analyst|CCA-159|ETL|USD $295|
+|CDH5|CCP Data Engineer|DE-575|HBASE|USD $400|
+|CDH5|CCP Data Scientist|DS-700||USD $600|
+|CDH5|CCP Data Scientist|DS-701||USD $600|
+|CDH5|CCP Data Scientist|DS-702||USD $600|
 
 # Databricks
 
