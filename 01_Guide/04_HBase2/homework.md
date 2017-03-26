@@ -11,7 +11,7 @@ create 'mytable', NAME =>'cf', VERSIONS => 3
 ```
 $ hdfs dfs -ls /hbase
 $ hdfs dfs -ls -R /hbase/data/default/mytable
-$ hdfs dfs –ls /hbase/data/default/mytable/*/cf
+$ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
 3 [HBase shell]
@@ -22,7 +22,7 @@ put 'mytable', 'row1','cf:col', 'foo'
 4 [Terminal]
 确认数据在 memstore 中存储，没有保存到文件
 ```
-$ hdfs dfs –ls /hbase/data/default/mytable/*/cf
+$ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
 5 [HBase shell]
@@ -33,7 +33,7 @@ flush 'mytable'
 6 [Terminal]
 确认前面的 flush 操作，把数据从 memstore 中写到 store file 中
 ```
-$ hdfs dfs –ls /hbase/data/default/mytable/*/cf
+$ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
 
@@ -46,7 +46,7 @@ flush 'mytable'
 8 [Terminal]
 第二次执行 flush 将数据从 memstore 写入到一个新 storefile 中
 ```
-$ hdfs dfs –ls /hbase/data/default/mytable/*/cf
+$ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
 读取列表中的文件，可以查看文件中所有的KV存储
@@ -80,7 +80,7 @@ hbase hlog hdfs://localhost:8020/<walpath>
 
 # Compactions and Data
 
-1 在hbase shell中添加一条新记录
+1 在 hbase shell 中添加一条新记录
 ```
 Table name: 'mytable'
 Row key: 'row3'
@@ -88,18 +88,18 @@ Column Family: 'cf'
 Column Descriptor: 'col' and value 'row 3 value'
 ```
 
-2 执行flush 和major compaction
+2 执行 flush 和 major compaction
 ```
 flush 'mytable'
 major_compact 'mytable'
 ```
 
-3 显示column family中的文件
+3 显示 column family 中的文件
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-4 使用hfile –printkv确认row3数据是否存在
+4 使用 hfile -printkv 确认 row3 数据是否存在
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path>
 ```
@@ -109,27 +109,27 @@ hbase hfile --printkv --file hdfs://localhost:8020/<path>
 delete 'mytable','row3'
 ```
 
-6 执行flush,使刚才删除操作生效
+6 执行 flush 使刚才删除操作生效
 ```
 flush 'mytable'
 ```
 
-7 使用hfile –printkv确认row3是否仍存在
+7 使用 hfile --printkv 确认 row3 是否仍存在
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path>
 ```
 
-8 执行major compaction
+8 执行 major compaction
 ```
 major_compact 'mytable'
 ```
 
-9 显示column family中的文件
+9 显示 column family 中的文件
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-10 使用hfile –printkv确认row3数据是否存在
+10 使用 hfile -printkv 确认 row3 数据是否存在
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path
 ```
@@ -146,22 +146,22 @@ Column Descriptor: 'col' and value 'third time'
 Column Descriptor: 'col' and value 'fourth time'
 ```
 
-12 执行flush操作
+12 执行 flush 操作
 ```
 flush 'mytable'
 ```
 
-13 执行major compaction
+13 执行 major compaction
 ```
 major_compact 'mytable'
 ```
 
-14 显示column family中的文件
+14 显示 column family 中的文件
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-15 使用hfile –printkv，验证row4是否只有3个值
+15 使用 hfile --printkv 验证 row4 是否只有3个值
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path
 ```
