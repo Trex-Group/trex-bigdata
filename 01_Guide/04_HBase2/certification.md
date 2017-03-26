@@ -37,7 +37,7 @@ http://hortonworks.com/training/certification/<br>
 https://www.examslocal.com/<br>
 
 |short name|full name|exam|point|price|
-|---|:---|:---|:---|:---|:---:|
+|---|:---|:---|:---|:---:|
 |HDPCD|Hortonworks Data Platform Certified Developer|xxx|xxx|USD $250|
 |HDPCD-Spark|Hortonworks Data Platform Certified Developer Spark|xxx|xxx|USD $250|
 |HDPCD-Java|Hortonworks Data Platform Certified Developer Java|xxx|xxx|USD $250|
