@@ -3,8 +3,8 @@
 
 
 ## Offical Website
-https://www.cloudera.com/training/certification.html
-http://www.cloudera.co.jp/university/certification.html
+https://www.cloudera.com/training/certification.html<br>
+http://www.cloudera.co.jp/university/certification.html<br>
 
 |type|short name|full name|exam|point|price|
 |---|:---|:---|:---|:---|:---:|
@@ -21,19 +21,20 @@ http://www.cloudera.co.jp/university/certification.html
 
 # Databricks
 
-Databricks Certifications for Apache® Spark™ 
-https://databricks.com/spark/certification 
-https://databricks.com/spark/certification/certified-spark-developer
+Databricks Certifications for Apache® Spark™<br>
+https://databricks.com/spark/certification<br>
+https://databricks.com/spark/certification/certified-spark-developer<br>
 
-http://www.oreilly.com/data/sparkcert 
-https://www.webassessor.com/wa.do?page=certInfo&branding=OREILLY&tabs=13 
-https://www.webassessor.com/wa.do?page=enterCatalog&branding=OREILLY&tabs=111
+http://www.oreilly.com/data/sparkcert<br>
+https://www.webassessor.com/wa.do?page=certInfo&branding=OREILLY&tabs=13<br>
+https://www.webassessor.com/wa.do?page=enterCatalog&branding=OREILLY&tabs=111<br>
 
 # Hortonworks
 
 ## Offical Website
-http://hortonworks.com/training/certification/
-https://www.examslocal.com/
+
+http://hortonworks.com/training/certification/<br>
+https://www.examslocal.com/<br>
 
 |short name|full name|exam|point|price|
 |---|:---|:---|:---|:---|:---:|
@@ -48,39 +49,39 @@ https://www.examslocal.com/
 ## Offical Website
 
 ### Certification
-https://aws.amazon.com/certification/?nc1=h_ls
-https://aws.amazon.com/cn/certification/?nc1=h_ls
-https://aws.amazon.com/jp/certification/?nc1=h_ls
+https://aws.amazon.com/certification/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/?nc1=h_ls<br>
 
 ### Prepare for Certification
-https://aws.amazon.com/certification/certification-prep/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certification-prep/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certification-prep/?nc1=h_ls
+https://aws.amazon.com/certification/certification-prep/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certification-prep/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certification-prep/?nc1=h_ls<br>
 
 ### AWS Certified Solutions Architect - Associate
-https://aws.amazon.com/certification/certified-solutions-architect-associate/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certified-solutions-architect-associate/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/?nc1=h_ls
+https://aws.amazon.com/certification/certified-solutions-architect-associate/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certified-solutions-architect-associate/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/?nc1=h_ls<br>
 
 ### AWS Certified Solutions Architect - Professional
-https://aws.amazon.com/certification/certified-solutions-architect-professional/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certified-solutions-architect-professional/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/?nc1=h_ls
+https://aws.amazon.com/certification/certified-solutions-architect-professional/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certified-solutions-architect-professional/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certified-solutions-architect-professional/?nc1=h_ls<br>
 
 ### AWS Certified Developer - Associate
-https://aws.amazon.com/certification/certified-developer-associate/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certified-developer-associate/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certified-developer-associate/?nc1=h_ls
+https://aws.amazon.com/certification/certified-developer-associate/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certified-developer-associate/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certified-developer-associate/?nc1=h_ls<br>
 
 ### AWS Certified SysOps Administrator - Associate
-https://aws.amazon.com/cn/certification/certified-sysops-admin-associate/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certified-sysops-admin-associate/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certified-sysops-admin-associate/?nc1=h_ls
+https://aws.amazon.com/cn/certification/certified-sysops-admin-associate/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certified-sysops-admin-associate/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certified-sysops-admin-associate/?nc1=h_ls<br>
 
 ### AWS Certified DevOps Engineer - Professional
-https://aws.amazon.com/certification/certified-devops-engineer-professional/?nc1=h_ls
-https://aws.amazon.com/cn/certification/certified-devops-engineer-professional/?nc1=h_ls
-https://aws.amazon.com/jp/certification/certified-devops-engineer-professional/?nc1=h_ls
+https://aws.amazon.com/certification/certified-devops-engineer-professional/?nc1=h_ls<br>
+https://aws.amazon.com/cn/certification/certified-devops-engineer-professional/?nc1=h_ls<br>
+https://aws.amazon.com/jp/certification/certified-devops-engineer-professional/?nc1=h_ls<br>
 
 ### price
 |type|name|price|
@@ -92,21 +93,25 @@ https://aws.amazon.com/jp/certification/certified-devops-engineer-professional/?
 |AWS Certified DevOps Engineer|Professional|USD 300|
 
 ## Whitepapers
-https://aws.amazon.com/whitepapers/?nc1=h_ls
-https://aws.amazon.com/cn/whitepapers/?nc1=h_ls
-https://aws.amazon.com/jp/whitepapers/?nc1=h_ls
+
+https://aws.amazon.com/whitepapers/?nc1=h_ls<br>
+https://aws.amazon.com/cn/whitepapers/?nc1=h_ls<br>
+https://aws.amazon.com/jp/whitepapers/?nc1=h_ls<br>
 
 ## Architecture
-https://aws.amazon.com/architecture/?nc1=h_ls
-https://aws.amazon.com/cn/architecture/?nc1=h_ls
-https://aws.amazon.com/jp/architecture/?nc1=h_ls
+
+https://aws.amazon.com/architecture/?nc1=h_ls<br>
+https://aws.amazon.com/cn/architecture/?nc1=h_ls<br>
+https://aws.amazon.com/jp/architecture/?nc1=h_ls<br>
 
 ## Documentation
-https://aws.amazon.com/documentation/?nc1=h_ls
-https://aws.amazon.com/cn/documentation/?nc1=h_ls
-https://aws.amazon.com/jp/documentation/?nc1=h_ls
+
+https://aws.amazon.com/documentation/?nc1=h_ls<br>
+https://aws.amazon.com/cn/documentation/?nc1=h_ls<br>
+https://aws.amazon.com/jp/documentation/?nc1=h_ls<br>
 
 ## AWS クラウドサービス活用資料集
-https://aws.amazon.com/jp/aws-jp-introduction/?nc1=h_ls
+
+https://aws.amazon.com/jp/aws-jp-introduction/?nc1=h_ls<br>
 
 
