@@ -5,7 +5,7 @@ services:
       context: ./hbase-master
       dockerfile: Dockerfile
     image: trex/hbase-master
-    container_name: master
+    container_name: master.trex.com
     hostname: master.trex.com
     ports:
       - "10022:22"
@@ -55,7 +55,7 @@ services:
       context: ./hbase-slave
       dockerfile: Dockerfile
     image: trex/hbase-slave
-    container_name: slave1
+    container_name: slave1.trex.com
     hostname: slave1.trex.com
     ports:
       - "20022:22"
@@ -105,7 +105,7 @@ services:
       context: ./hbase-slave
       dockerfile: Dockerfile
     image: trex/hbase-slave
-    container_name: slave2
+    container_name: slave2.trex.com
     hostname: slave2.trex.com
     ports:
       - "30022:22"
