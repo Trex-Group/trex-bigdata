@@ -19,7 +19,7 @@ docker-compose run -d
 docker-compose stop
 docker-compose rm
 
-docker-compost -f down
+docker-compose -f down
 ```
 
 # master container
