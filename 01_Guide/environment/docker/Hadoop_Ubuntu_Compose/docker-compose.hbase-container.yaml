@@ -2,22 +2,152 @@ version: '2.0'
 services:
   hbase-master:
     build:
-      context: ./hadoop-master
+      context: ./hbase-master
       dockerfile: Dockerfile
-    image: trex/hadoop-master
+    image: trex/hbase-master
     container_name: master
-    hostname: master.test.com
+    hostname: master.trex.com
+    ports:
+      - "10022:22"
+#      - ":7373"
+#      - ":7946"
+#      - ":8030"
+#      - ":8031"
+#      - ":8032"
+#      - ":8033"
+#      - ":8040"
+      - "18042:8042"
+#      - ":8060"
+      - "18088:8088"
+      - "19000:9000"
+#      - ":50010"
+#      - ":50020"
+#      - ":50060"
+      - "51070:50070"
+#      - ":50075"
+#      - ":50090"
+#      - ":50475"
+    expose:
+      - 22
+      - 2818
+      - 7373
+      - 7946
+      - 8030
+      - 8031
+      - 8032
+      - 8033
+      - 8040
+      - 8042
+      - 8060
+      - 8088
+      - 9000
+      - 50010
+      - 50020
+      - 50060
+      - 50070
+      - 50075
+      - 50090
+      - 50475
+      - 60000
+      - 60010
   hbase-datanode-1:
     build:
-      context: ./hadoop-slave
+      context: ./hbase-slave
       dockerfile: Dockerfile
-    image: trex/hadoop-slave
+    image: trex/hbase-slave
     container_name: slave1
-    hostname: slave1.test.com
+    hostname: slave1.trex.com
+    ports:
+      - "20022:22"
+#      - ":7373"
+#      - ":7946"
+#      - ":8030"
+#      - ":8031"
+#      - ":8032"
+#      - ":8033"
+#      - ":8040"
+      - "28042:8042"
+#      - ":8060"
+      - "28088:8088"
+      - "29000:9000"
+#      - ":50010"
+#      - ":50020"
+#      - ":50060"
+      - "52070:50070"
+#      - ":50075"
+#      - ":50090"
+#      - ":50475"
+    expose:
+      - 22
+      - 2818
+      - 7373
+      - 7946
+      - 8030
+      - 8031
+      - 8032
+      - 8033
+      - 8040
+      - 8042
+      - 8060
+      - 8088
+      - 9000
+      - 50010
+      - 50020
+      - 50060
+      - 50070
+      - 50075
+      - 50090
+      - 50475
+      - 60000 
+      - 60010
   hbase-datanode-2:
     build:
-      context: ./hadoop-slave
+      context: ./hbase-slave
       dockerfile: Dockerfile
-    image: trex/hadoop-slave
+    image: trex/hbase-slave
     container_name: slave2
-    hostname: slave2.test.com
+    hostname: slave2.trex.com
+    ports:
+      - "30022:22"
+#      - ":7373"
+#      - ":7946"
+#      - ":8030"
+#      - ":8031"
+#      - ":8032"
+#      - ":8033"
+#      - ":8040"
+      - "38042:8042"
+#      - ":8060"
+      - "38088:8088"
+      - "39000:9000"
+#      - ":50010"
+#      - ":50020"
+#      - ":50060"
+      - "53070:50070"
+#      - ":50075"
+#      - ":50090"
+#      - ":50475"
+    expose:
+      - 22
+      - 2818
+      - 7373
+      - 7946
+      - 8030
+      - 8031
+      - 8032
+      - 8033
+      - 8040
+      - 8042
+      - 8060
+      - 8088
+      - 9000
+      - 50010
+      - 50020
+      - 50060
+      - 50070
+      - 50075
+      - 50090
+      - 50475
+      - 60000 
+      - 60010
+
