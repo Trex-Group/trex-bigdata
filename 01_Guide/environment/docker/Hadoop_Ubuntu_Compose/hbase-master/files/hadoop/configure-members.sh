@@ -3,10 +3,10 @@
 slaves=/tmp/slaves
 rm -f $slaves
 >$slaves
-regionservers=/usr/local/hbase/conf/regionservers
+regionservers=/opt/hbase/conf/regionservers
 rm -f $regionservers
 >$regionservers
-hbaseconf=/usr/local/hbase/conf/hbase-site.xml
+hbaseconf=/opt/hbase/conf/hbase-site.xml
 
 
 
