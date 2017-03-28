@@ -102,7 +102,7 @@ $HADOOP_HOME/bin/hdfs dfsadmin -report
 ## HBase Shell
 ```
 cd ~
-./start-hbase.sh
+/root/start-hbase.sh
 ```
 
 ```
