@@ -50,6 +50,9 @@ services:
       - 50475
       - 60000
       - 60010
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
   hbase-datanode-1:
     build:
       context: ./hbase-slave
@@ -100,6 +103,9 @@ services:
       - 50475
       - 60000 
       - 60010
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
   hbase-datanode-2:
     build:
       context: ./hbase-slave
@@ -150,4 +156,8 @@ services:
       - 50475
       - 60000 
       - 60010
+    environment:
+      HADOOP_MASTER: master.trex.com
+      HADOOP_SLAVE: slave1.trex.com slave2.trex.com
+
 
