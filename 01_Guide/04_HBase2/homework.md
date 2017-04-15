@@ -7,7 +7,7 @@ create 'mytable', NAME =>'cf', VERSIONS => 3
 ```
 
 2 [Terminal]
-Ã»ÓĞÊı¾İÌí¼Ó£¬ËùÒÔÃ»ÓĞ storefile
+æ²¡æœ‰æ•°æ®æ·»åŠ ï¼Œæ‰€ä»¥æ²¡æœ‰ storefile
 ```
 $ hdfs dfs -ls /hbase
 $ hdfs dfs -ls -R /hbase/data/default/mytable
@@ -20,7 +20,7 @@ put 'mytable', 'row1','cf:col', 'foo'
 ```
 
 4 [Terminal]
-È·ÈÏÊı¾İÔÚ memstore ÖĞ´æ´¢£¬Ã»ÓĞ±£´æµ½ÎÄ¼ş
+ç¡®è®¤æ•°æ®åœ¨ memstore ä¸­å­˜å‚¨ï¼Œæ²¡æœ‰ä¿å­˜åˆ°æ–‡ä»¶
 ```
 $ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
@@ -31,7 +31,7 @@ flush 'mytable'
 ```
 
 6 [Terminal]
-È·ÈÏÇ°ÃæµÄ flush ²Ù×÷£¬°ÑÊı¾İ´Ó memstore ÖĞĞ´µ½ store file ÖĞ
+ç¡®è®¤å‰é¢çš„ flush æ“ä½œï¼ŒæŠŠæ•°æ®ä» memstore ä¸­å†™åˆ° store file ä¸­
 ```
 $ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
@@ -44,12 +44,12 @@ flush 'mytable'
 ```
 
 8 [Terminal]
-µÚ¶ş´ÎÖ´ĞĞ flush ½«Êı¾İ´Ó memstore Ğ´Èëµ½Ò»¸öĞÂ storefile ÖĞ
+ç¬¬äºŒæ¬¡æ‰§è¡Œ flush å°†æ•°æ®ä» memstore å†™å…¥åˆ°ä¸€ä¸ªæ–° storefile ä¸­
 ```
 $ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-¶ÁÈ¡ÁĞ±íÖĞµÄÎÄ¼ş£¬¿ÉÒÔ²é¿´ÎÄ¼şÖĞËùÓĞµÄKV´æ´¢
+è¯»å–åˆ—è¡¨ä¸­çš„æ–‡ä»¶ï¼Œå¯ä»¥æŸ¥çœ‹æ–‡ä»¶ä¸­æ‰€æœ‰çš„KVå­˜å‚¨
 ```
 $ hbase hfile --printkv --file hdfs://localhost:8020/<fullpath from8>
 ```
@@ -60,27 +60,27 @@ major_compact 'mytable'
 ```
 
 10 [Terminal]
-Major Compact °ÑĞ¡µÄ Store files ºÏ²¢µ½Ò»¸ö´óµÄ store file ÖĞ£¬¿ÉÒÔÔÚÕâ¸ö store file ÖĞ¿´µ½ËùÓĞµÄKV´æ´¢
+Major Compact æŠŠå°çš„ Store files åˆå¹¶åˆ°ä¸€ä¸ªå¤§çš„ store file ä¸­ï¼Œå¯ä»¥åœ¨è¿™ä¸ª store file ä¸­çœ‹åˆ°æ‰€æœ‰çš„KVå­˜å‚¨
 ```
 $ hdfs dfs -ls /hbase/data/default/mytable/*/cf
 $ hbase hfile --printkv --file hdfs://localhost:8020/<path>
 ```
 
 11 [Terminal]
-ÏÔÊ¾ RegionServer µÄ WAL
+æ˜¾ç¤º RegionServer çš„ WAL
 ```
 $ hdfs dfs -ls /hbase/WALs/*/
 ```
 
 12 [Terminal]
-²é¿´ hbase hlog
+æŸ¥çœ‹ hbase hlog
 ```
 hbase hlog hdfs://localhost:8020/<walpath>
 ```
 
 # Compactions and Data
 
-1 ÔÚ hbase shell ÖĞÌí¼ÓÒ»ÌõĞÂ¼ÇÂ¼
+1 åœ¨ hbase shell ä¸­æ·»åŠ ä¸€æ¡æ–°è®°å½•
 ```
 Table name: 'mytable'
 Row key: 'row3'
@@ -88,53 +88,53 @@ Column Family: 'cf'
 Column Descriptor: 'col' and value 'row 3 value'
 ```
 
-2 Ö´ĞĞ flush ºÍ major compaction
+2 æ‰§è¡Œ flush å’Œ major compaction
 ```
 flush 'mytable'
 major_compact 'mytable'
 ```
 
-3 ÏÔÊ¾ column family ÖĞµÄÎÄ¼ş
+3 æ˜¾ç¤º column family ä¸­çš„æ–‡ä»¶
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-4 Ê¹ÓÃ hfile -printkv È·ÈÏ row3 Êı¾İÊÇ·ñ´æÔÚ
+4 ä½¿ç”¨ hfile -printkv ç¡®è®¤ row3 æ•°æ®æ˜¯å¦å­˜åœ¨
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path>
 ```
 
-5 É¾³ı¸Õ²ÅÌí¼ÓµÄ¼ÇÂ¼
+5 åˆ é™¤åˆšæ‰æ·»åŠ çš„è®°å½•
 ```
 delete 'mytable','row3'
 ```
 
-6 Ö´ĞĞ flush Ê¹¸Õ²ÅÉ¾³ı²Ù×÷ÉúĞ§
+6 æ‰§è¡Œ flush ä½¿åˆšæ‰åˆ é™¤æ“ä½œç”Ÿæ•ˆ
 ```
 flush 'mytable'
 ```
 
-7 Ê¹ÓÃ hfile --printkv È·ÈÏ row3 ÊÇ·ñÈÔ´æÔÚ
+7 ä½¿ç”¨ hfile --printkv ç¡®è®¤ row3 æ˜¯å¦ä»å­˜åœ¨
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path>
 ```
 
-8 Ö´ĞĞ major compaction
+8 æ‰§è¡Œ major compaction
 ```
 major_compact 'mytable'
 ```
 
-9 ÏÔÊ¾ column family ÖĞµÄÎÄ¼ş
+9 æ˜¾ç¤º column family ä¸­çš„æ–‡ä»¶
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-10 Ê¹ÓÃ hfile -printkv È·ÈÏ row3 Êı¾İÊÇ·ñ´æÔÚ
+10 ä½¿ç”¨ hfile -printkv ç¡®è®¤ row3 æ•°æ®æ˜¯å¦å­˜åœ¨
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path
 ```
 
-11 ÖØ¸´Ìí¼Ó4ÌõĞÂ¼ÇÂ¼
+11 é‡å¤æ·»åŠ 4æ¡æ–°è®°å½•
 ```
 Table name: 'mytable'
 Row key: 'row4'
@@ -146,22 +146,22 @@ Column Descriptor: 'col' and value 'third time'
 Column Descriptor: 'col' and value 'fourth time'
 ```
 
-12 Ö´ĞĞ flush ²Ù×÷
+12 æ‰§è¡Œ flush æ“ä½œ
 ```
 flush 'mytable'
 ```
 
-13 Ö´ĞĞ major compaction
+13 æ‰§è¡Œ major compaction
 ```
 major_compact 'mytable'
 ```
 
-14 ÏÔÊ¾ column family ÖĞµÄÎÄ¼ş
+14 æ˜¾ç¤º column family ä¸­çš„æ–‡ä»¶
 ```
 hdfs dfs -ls /hbase/data/default/mytable/*/cf
 ```
 
-15 Ê¹ÓÃ hfile --printkv ÑéÖ¤ row4 ÊÇ·ñÖ»ÓĞ3¸öÖµ
+15 ä½¿ç”¨ hfile --printkv éªŒè¯ row4 æ˜¯å¦åªæœ‰3ä¸ªå€¼
 ```
 hbase hfile --printkv --file hdfs://localhost:8020/<path
 ```

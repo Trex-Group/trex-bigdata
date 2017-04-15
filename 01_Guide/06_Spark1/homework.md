@@ -1,35 +1,36 @@
 # Spark VirtualBox Image - Standalone
 
-ÄÑ¶ÈµÈ¼¶£º¡î<br>
-Ô¤¼ÆÊ±¼ä£º30 minus<br>
+éš¾åº¦ç­‰çº§ï¼šâ˜…<br>
+é¢„è®¡æ—¶é—´ï¼š4 hours<br>
 
-1) ¸´ÖÆ Spark VirtualBox Image£¨Trex_06_Spark Ä¿Â¼ÏÂµÄÈı¸ö½Úµã£© µ½×Ô¼ºµÄµçÄÔÉÏ<br>
-2) ÔÚ VirtualBox »·¾³ÖĞ£¬µ¼Èë Spark VirtualBox Image<br>
-3) ¸ù¾İ×Ô¼ºµÄÓ²¼ş»·¾³£¬µ÷ÕûĞéÄâ»ú½ÚµãµÄÄÚ´æ£¬ÎïÀíÍø¿¨Ãû³Æ£¨¿ÉÄÜĞèÒªË¢ĞÂ MAC ADDRESS £©<br>
-4) ¿ªÆô3¸öĞéÄâ»ú½Úµã£¨Master£¬Worker-1£¬Worker-2£©<br>
-5) Í¨¹ıÖ÷»ú ping Í¨3¸öĞéÄâ»ú½Úµã£¬ssh Á¬½Óµ½3¸öĞéÄâ»ú½Úµã<br>
-6) ÔËĞĞ example <br>
+ä¸‹è½½æœç‹—ç”¨æˆ·æŸ¥è¯¢æ—¥å¿—ï¼ˆSogouQï¼‰<br>
+https://www.sogou.com/labs/resource/q.php<br>
+è¿·ä½ ç‰ˆ(æ ·ä¾‹æ•°æ®, 376KB)<br>
+ç²¾ç®€ç‰ˆ(ä¸€å¤©æ•°æ®ï¼Œ63MB)<br>
+å®Œæ•´ç‰ˆ(1.9GB)<br>
+æ•°æ®æ ¼å¼è¯´æ˜ï¼š<br>
+è®¿é—®æ—¶é—´\tç”¨æˆ·ID\t[æŸ¥è¯¢è¯]\tè¯¥URLåœ¨è¿”å›ç»“æœä¸­çš„æ’å\tç”¨æˆ·ç‚¹å‡»çš„é¡ºåºå·\tç”¨æˆ·ç‚¹å‡»çš„URL<br>
+å…¶ä¸­ï¼Œç”¨æˆ·IDæ˜¯æ ¹æ®ç”¨æˆ·ä½¿ç”¨æµè§ˆå™¨è®¿é—®æœç´¢å¼•æ“æ—¶çš„Cookieä¿¡æ¯è‡ªåŠ¨èµ‹å€¼ï¼Œå³åŒä¸€æ¬¡ä½¿ç”¨æµè§ˆå™¨è¾“å…¥çš„ä¸åŒæŸ¥è¯¢å¯¹åº”åŒä¸€ä¸ªç”¨æˆ·IDã€‚<br>
 
-# Spark Source Compile
+1) æœ€çƒ­é—¨çš„æŸ¥è¯¢è¯æ’è¡Œ top10<br>
+2) ç”¨æˆ·æŸ¥è¯¢æ’è¡Œ top10<br>
+3) ç½‘ç«™è®¿é—®æ’è¡Œç‰ˆ(ä¸ç”¨åŒºåˆ†äºŒçº§åŸŸå) top50<br>
 
-ÄÑ¶ÈµÈ¼¶£º¡î<br>
-Ô¤¼ÆÊ±¼ä£º60 minus<br>
+# åœ¨ä¸åŒç¯å¢ƒä¸‹è¿è¡Œ Spark ç¨‹åº
 
-1) ÔÚ Docker »·¾³ÏÂ£¬Ê¹ÓÃ Spark_Ubuntu_Source_Maven_Compile Ìá¹©µÄ½Å±¾<br>
-´î½¨Spar µÄ Maven ±àÒë»·¾³£¬²¢°´ÕÕ README.md Íê³É´úÂë±àÒë¹ı³Ì<br>
-https://github.com/trex-group/Big-Data/tree/master/01_Guide/environment/docker/Spark_Ubuntu_Source_Maven_Compile<br>
-2) ÔÚ Docker »·¾³ÏÂ£¬Ê¹ÓÃ Spark_Ubuntu_Source_Sbt_Compile Ìá¹©µÄ½Å±¾<br>
-´î½¨Spar µÄ Sbt ±àÒë»·¾³£¬²¢°´ÕÕ README.md Íê³É´úÂë±àÒë¹ı³Ì<br>
-https://github.com/trex-group/Big-Data/tree/master/01_Guide/environment/docker/Spark_Ubuntu_Source_Sbt_Compile<br>
+éš¾åº¦ç­‰çº§ï¼šâ˜…<br>
+é¢„è®¡æ—¶é—´ï¼š4 hours<br>
 
-# Spark On Yarn
+spark-shell
+spark-submit
+IDE (IDEA or Eclipse)
 
-ÄÑ¶ÈµÈ¼¶£º¡ï¡ï<br>
-Ô¤¼ÆÊ±¼ä£º2 day at least<br>
 
-# Spark On Mesos
+# Spark SQL
 
-ÄÑ¶ÈµÈ¼¶£º¡ï¡ï<br>
-Ô¤¼ÆÊ±¼ä£º2 day at least<br>
+éš¾åº¦ç­‰çº§ï¼šâ˜…<br>
+é¢„è®¡æ—¶é—´ï¼š4 hours<br>
 
+å°è¯•è¿è¡Œspark sql
+http://spark.apache.org/docs/latest/sql-programming-guide.html
 
