@@ -69,10 +69,10 @@ RUN mkdir /var/run/sshd && \
   sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
 # Hadoop
-RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3-src.tar.gz && \
-  tar xzf /tmp/hadoop-2.7.3-src.tar.gz -C /opt && \
-  rm /tmp/hadoop-2.7.3-src.tar.gz && \
-  mv /opt/hadoop-2.7.3-src /opt/hadoop
+RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.6.5/hadoop-2.6.5-src.tar.gz && \
+  tar xzf /tmp/hadoop-2.6.5-src.tar.gz -C /opt && \
+  rm /tmp/hadoop-2.6.5-src.tar.gz && \
+  mv /opt/hadoop-2.6.5-src /opt/hadoop
 
 # Spark
 RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/spark/spark-1.6.3/spark-1.6.3.tgz && \
@@ -91,6 +91,6 @@ RUN mv /usr/local/bashrc ~/.bashrc
 # compile
 RUN . ~/.bashrc && \
   cd /opt/spark && \
-  mvn clean -Dhadoop.version=2.7.3 -Pyarn -Phadoop-2.7 -DskipTests clean package
+  mvn clean -Dhadoop.version=2.6.5 -Pyarn -Phadoop-2.6 -DskipTests clean package
 
 
