@@ -19,10 +19,10 @@ docker-compose -f docker-compose.hadoop-container.yaml up -d
 ## Clean up
 
 ```bash
-docker-compose stop
-docker-compose rm
+docker-compose -f docker-compose.hadoop-container.yaml stop
+docker-compose -f docker-compose.hadoop-container.yaml rm
 
-docker-compose -f down
+docker-compose -f docker-compose.hadoop-container.yaml down
 ```
 
 ## master container
@@ -80,10 +80,10 @@ docker-compose -f docker-compose.hbase-container.yaml up -d
 
 # Clean up
 ```bash
-docker-compose stop
-docker-compose rm
+docker-compose -f docker-compose.hadoop-container.yaml stop
+docker-compose -f docker-compose.hadoop-container.yaml rm
 
-docker-compose -f down
+docker-compose -f docker-compose.hadoop-container.yaml down
 ```
 
 ## Start Hadoop & HBase in master container
