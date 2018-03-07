@@ -4,11 +4,11 @@ MAINTAINER xenron <xenron@hotmail.com>
 # move all configuration files into container
 ADD files/* /usr/local/
 
-# install hadoop 2.7.3
-RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && \
-  tar xzf /tmp/hadoop-2.7.3.tar.gz -C /opt && \
-  rm /tmp/hadoop-2.7.3.tar.gz && \
-  mv /opt/hadoop-2.7.3 /opt/hadoop && \
+# install hadoop 2.7.5
+RUN wget -q -o out.log -P /tmp https://archive.apache.org/dist/hadoop/common/hadoop-2.7.5/hadoop-2.7.5.tar.gz && \
+  tar xzf /tmp/hadoop-2.7.5.tar.gz -C /opt && \
+  rm /tmp/hadoop-2.7.5.tar.gz && \
+  mv /opt/hadoop-2.7.5 /opt/hadoop && \
   mv /usr/local/bashrc ~/.bashrc && \
   mv /usr/local/hadoop-env.sh /opt/hadoop/etc/hadoop/hadoop-env.sh
 
